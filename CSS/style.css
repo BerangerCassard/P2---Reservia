@@ -54,12 +54,13 @@ body a {
 .search {
   margin: 40px 0;
 }
-.search__bar {
+.search__bloc .search__bar {
   position: relative;
   border-radius: 20px;
   border: solid #F2F2F2 1px;
   background-color: white;
   height: 40px;
+  z-index: 0;
 }
 .search__submit {
   position: absolute;
@@ -73,6 +74,24 @@ body a {
   font-weight: 500;
   font-size: 17px;
   letter-spacing: 0.1vh;
+}
+.search__filters {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+.search__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 30px;
+}
+.search li {
+  margin: 0 20px;
+  border: solid #F2F2F2 1px;
+  border-radius: 20px;
+  font-weight: 600;
+  line-height: 40px;
 }
 
 .page {

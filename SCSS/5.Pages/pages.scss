@@ -1,5 +1,16 @@
+// Search Feature
+
 .search{
     margin: 40px 0;
+    &__bloc
+        // &::before {
+        //     content: "test";
+        //     width: 30px;
+        //     height: 40px;
+        //     background-color: $third-color;
+        //     background-image: url(/images/icon/placeholder.svg);
+        //     z-index: 1;
+        // }        
 
     &__bar {
         position: relative;
@@ -7,7 +18,7 @@
         border: solid $third-color 1px;
         background-color: white;
         height: 40px;
-
+        z-index: 0;
     }
     &__submit{
         position: absolute;
@@ -22,4 +33,31 @@
         font-size: 17px;
         letter-spacing: 0.1vh;
     }
+
+    &__filters {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+    }
+        &__list{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin: 0 30px;
+        }
+            & li{
+                margin: 0 20px;
+                border: solid $third-color 1px;
+                border-radius: 20px;
+                font-weight: 600;
+                line-height: 40px;
+            }
+        // & p::before {
+        //     content: "";
+        //     width: 20px;
+        //     height: 20px;
+        //     background-image: url(/images/icon/information.png);
+        // }
 }
+
+// accommodation section
