@@ -94,13 +94,13 @@ body a {
   flex-direction: row;
   list-style-type: none;
 }
-.search__list {
+.search__filters__list {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin: 0 30px;
 }
-.search li {
+.search__filters__list li {
   margin: 0 20px;
   border: solid #F2F2F2 1px;
   border-radius: 20px;
