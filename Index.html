@@ -7,94 +7,113 @@
     <title>Reservia</title>
 </head>
 <body>
-    <div class="page">
-        <header class="header">
-            <img class="header__logo" src="images/logo/Reservia@3x.png">
-            <div class="header__box">
-                <nav class="header__nav">
-                    <a><li>Hébergement</li></a>
-                    <a><li>Activité</li></a>
-                </nav>
-                <a class="btn-inscription"> S'inscrire </a>
-            </div>
-        </header>
+    <div class="bloc">
 
-        <section class="search">
-            <div class="search__title">
-                <h1>Trouvez votre Hébergement pour des vacances de rêve</h1>
-                <p>En plein centre ville ou en pleine nature</p>
-            </div>
-            <div class="search__bloc">
-                <form method="POST" action="traitement.php">
-                    <input class="search__bar" type="search" name="search__bar" id="search__bar" placeholder="ex : Marseille, France" size="30" maxlength="20">
-                    <input class="search__submit" type="submit" value="Rechercher" >
-                </form>
-            </div>
-            <div class="search__filters">
-                <h2>Filtres</h2>
-                <div class="search__list"> 
-                    <li>Economique</li>
-                    <li>Familial</li>
-                    <li>Romantique</li>
-                    <li>Animaux autorisés</li>
-                </div>
-            </div>
-            <p>Plus de 500 logements sont disponibles dans cette ville</p>
-        </section>
+    <!-- Header -->
 
-        <section class="accomodation">
-            <div class="accomodation__results">
-                <h1> Hébergement à Marseille</h1>
-                <div class="accomodation__results__list">
-                    <img class="accomodation__results__list--item1" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
-                    <img class="accomodation__results__list--item2" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
-                    <img class="accomodation__results__list--item3" src="images/Hébergement/4_small/reisetopia-B8WIGxA_PFU-unsplash.jpg">
-                    <img class="accomodation__results__list--item4" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
-                    <img class="accomodation__results__list--item5" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
-                    <img class="accomodation__results__list--item6" src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
+        <div class="bloc__page">
+            <header class="header">
+                <img class="header__logo" src="images/logo/Reservia@3x.png">
+                <div class="header__box">
+                    <nav class="header__nav">
+                        <a><li>Hébergement</li></a>
+                        <a><li>Activité</li></a>
+                    </nav>
+                    <a class="btn-inscription"> S'inscrire </a>
                 </div>
-                <p>Afficher plus</p>
-            </div>
-            <aside class="accomodation__popular">
+            </header>
 
-            </aside>
-        </section>
-        <section class="activity">
-            <h1>Activités à Marseille</h1>
-            <div class="activity__list">
-                <div class="activity__list--item1"><img src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"></div>
-                <div class="activity__list--item2">
-                    <img src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg">
-                    <img src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg">
-                </div>
-                <div class="activity__list--item3"><img src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"></div>
-                <div class="activity__list--item4">
-                    <img src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg">
-                    <img src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg">
-                </div>
-            </div>
-        </section>
+    <!-- Search section -->
 
-        <footer class="footer">
-            <div class="footer__about">
-                <h2>A propos</h2>
-                <p>Fonctionnement du site</p>
-                <p>Conditions générales de vente</p>
-                <p>données et confidentialité</p>
-            </div>
-            <div class="footer__accomodation">
-                <h2>Nos Hébergements</h2>
-                <p>Charte qualité</p>
-                <p>Soumettre votre hôtel</p>
-            </div>
-            <div class="footer__assistance">
-                <p>Centre d'aide</p>
-                <p>Nous contacter</p>
+            <section class="search">
+                <div class="search__title">
+                    <h1>Trouvez votre Hébergement pour des vacances de rêve</h1>
+                    <p>En plein centre ville ou en pleine nature</p>
+                </div>
+                <div class="search__bloc">
+                    <form method="POST" action="traitement.php">
+                        <input class="search__bar" type="search" name="search__bar" id="search__bar" placeholder="ex : Marseille, France" size="30" maxlength="20">
+                        <input class="search__submit" type="submit" value="Rechercher" >
+                    </form>
+                </div>
+                <div class="search__filters">
+                    <h2>Filtres</h2>
+                    <div class="search__list"> 
+                        <li>Economique</li>
+                        <li>Familial</li>
+                        <li>Romantique</li>
+                        <li>Animaux autorisés</li>
+                    </div>
+                </div>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            </section>
+
+    <!-- Page-recommandation -->
+
+            <section class="accomodation">
+                <div class="accomodation__results">
+                    <div class="accomodation__result--inside">
+                        <h1> Hébergement à Marseille</h1>
+                        <div class="accomodation__results__list">
+                            <img class="accomodation__results__list--item1" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                            <img class="accomodation__results__list--item2" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
+                            <img class="accomodation__results__list--item3" src="/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg">
+                            <img class="accomodation__results__list--item4" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
+                            <img class="accomodation__results__list--item5" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
+                            <img class="accomodation__results__list--item6" src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
+                        </div>
+                        <p>Afficher plus</p>
+                    </div>
+                </div>
+
+                <aside class="accomodation__popular">
+                    <div class="accomodation__popular--inside">
+                        <h1>Les plus populaires</h1>
+                    </div>                    
+                </aside>
+            </section>
+
+   <!-- Page - activities -->
+
+            <section class="activity">
+                <h1>Activités à Marseille</h1>
+                <div class="activity__list">
+                    <div class="activity__list--item1"><img src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"></div>
+                    <div class="activity__list--item2">
+                        <img src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg">
+                        <img src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg">
+                    </div>
+                    <div class="activity__list--item3"><img src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"></div>
+                    <div class="activity__list--item4">
+                        <img src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg">
+                        <img src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg">
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    <!-- Footer -->
+
+        <footer class="bloc__footer">
+            <div class="footer">
+                <div class="footer__about">
+                    <h2>A propos</h2>
+                    <p>Fonctionnement du site</p>
+                    <p>Conditions générales de vente</p>
+                    <p>données et confidentialité</p>
+                </div>
+                <div class="footer__accomodation">
+                    <h2>Nos Hébergements</h2>
+                    <p>Charte qualité</p>
+                    <p>Soumettre votre hôtel</p>
+                </div>
+                <div class="footer__assistance">
+                    <h2>Assistance</h2>
+                    <p>Centre d'aide</p>
+                    <p>Nous contacter</p>
+                </div>
             </div>
         </footer>
-
-
-
     </div>  
 </body>
 </html>

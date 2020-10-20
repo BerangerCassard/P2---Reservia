@@ -1,4 +1,13 @@
-.page {
+.bloc {
     margin: auto;
-    width: 90%;
+    width: 95%;
+
+    &__page{
+        width: 95%;
+        margin: auto;
+    }
+
+    & img {
+        border-radius: $bloc-radius;
+    }
 }

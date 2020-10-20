@@ -46,6 +46,21 @@ body a {
   padding: 0 1em;
 }
 
+.bloc__footer {
+  background-color: #F2F2F2;
+}
+
+.footer {
+  width: 95%;
+  margin: 50px auto;
+  padding: 30px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 0.8rem;
+}
+
 .btn-inscription {
   color: #0065FC;
   font-weight: bold;
@@ -54,13 +69,12 @@ body a {
 .search {
   margin: 40px 0;
 }
-.search__bloc .search__bar {
+.search__bar {
   position: relative;
   border-radius: 20px;
   border: solid #F2F2F2 1px;
   background-color: white;
   height: 40px;
-  z-index: 0;
 }
 .search__submit {
   position: absolute;
@@ -93,10 +107,58 @@ body a {
   font-weight: 600;
   line-height: 40px;
 }
+.search > p::before {
+  content: url(/images/icon/information.png);
+  margin-right: 10px;
+}
 
-.page {
-  margin: auto;
+.accomodation {
+  display: flex;
+  flex-direction: row;
+}
+.accomodation__results {
+  background-color: #F2F2F2;
+  border-radius: 20px;
+  flex: 5;
+  margin-right: 15px;
+}
+.accomodation__result--inside {
   width: 90%;
+  margin: 50px auto;
+}
+.accomodation__result__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.accomodation img {
+  width: 200px;
+}
+.accomodation__popular {
+  background-color: #F2F2F2;
+  border-radius: 20px;
+  flex: 2;
+  margin-left: 15px;
+}
+.accomodation__popular--inside {
+  width: 90%;
+  margin: 50px auto;
+}
+
+.activity__list {
+  display: flex;
+}
+
+.bloc {
+  margin: auto;
+  width: 95%;
+}
+.bloc__page {
+  width: 95%;
+  margin: auto;
+}
+.bloc img {
+  border-radius: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

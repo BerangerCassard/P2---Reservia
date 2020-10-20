@@ -2,15 +2,6 @@
 
 .search{
     margin: 40px 0;
-    &__bloc
-        // &::before {
-        //     content: "test";
-        //     width: 30px;
-        //     height: 40px;
-        //     background-color: $third-color;
-        //     background-image: url(/images/icon/placeholder.svg);
-        //     z-index: 1;
-        // }        
 
     &__bar {
         position: relative;
@@ -18,7 +9,6 @@
         border: solid $third-color 1px;
         background-color: white;
         height: 40px;
-        z-index: 0;
     }
     &__submit{
         position: absolute;
@@ -33,6 +23,10 @@
         font-size: 17px;
         letter-spacing: 0.1vh;
     }
+        //  &::before {
+        //     content: url(/images/icon/placeholder.png);
+        //     background-color: $third-color;
+        // }   
 
     &__filters {
         display: flex;
@@ -52,12 +46,63 @@
                 font-weight: 600;
                 line-height: 40px;
             }
-        // & p::before {
-        //     content: "";
-        //     width: 20px;
-        //     height: 20px;
-        //     background-image: url(/images/icon/information.png);
-        // }
+
+            & > p {
+                // vertical-align: top;
+            }
+
+            & > p::before {
+                content: url(/images/icon/information.png);
+                margin-right: 10px;
+            }
 }
 
 // accommodation section
+
+.accomodation {
+    display: flex;
+    flex-direction: row;
+    
+    &__results{
+        background-color: $third-color;
+        border-radius: 20px;
+        flex: 5;
+        margin-right: 15px;
+    }
+        &__result--inside{
+            width: 90%;
+            margin: $margin-inside;
+        }
+            &__result__list{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+                & img{
+                    width: 200px;
+                }
+
+    &__popular{
+        background-color: $third-color;
+        border-radius: $bloc-radius;
+        flex: 2;
+        margin-left: 15px;
+    }
+        &__popular--inside{
+            width: 90%;
+            margin: $margin-inside;
+        }
+            // & H1 ::after {
+            //     content: "test";
+
+            // }
+}
+
+// activities section
+
+.activity{
+
+    &__list {
+        display: flex;
+    }
+}

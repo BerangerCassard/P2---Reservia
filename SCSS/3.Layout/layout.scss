@@ -30,3 +30,18 @@
                 }
      }
 
+// Footer
+.bloc__footer {
+    background-color: $third-color;
+}
+
+.footer {
+    width: 95%;
+    margin: $margin-inside;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 0.8rem;
+}
