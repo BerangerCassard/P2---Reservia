@@ -1,5 +1,20 @@
+// variables
+
 $primary-color : #0065FC;
 $secondary-color: #DEEBFF;
 $third-color: #F2F2F2;
-$bloc-radius: 20px;
+$radius: 20px;
 $margin-inside: 50px auto;
+
+// mixins
+
+@mixin filter {
+    margin: 0 $radius;
+    border: solid $third-color 1px;
+    border-radius: $radius;
+    font-weight: 600;
+    line-height: 40px;
+    padding-right: 10px;
+    padding-left: 50px;
+    cursor: pointer;
+}

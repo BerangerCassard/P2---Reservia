@@ -3,34 +3,56 @@
 .search{
     margin: 40px 0;
 
-    &__bar {
+    &__bloc {
+        width: 33%;
         position: relative;
-        border-radius: 20px;
-        border: solid $third-color 1px;
-        background-color: white;
-        height: 40px;
+        display: flex;
+
+        &__icon {
+            height: 40px;
+            width: 65px;
+            background-color: $third-color;
+            border-radius: $radius 0 0 $radius;
+
+            & img{
+                position: absolute;
+                left: 11px;
+                top: 7px;
+            }
+        }
+
+        &__bar {
+            width: 100%;
+            left: 39px;
+            border: solid $third-color 1px;
+            background-color: white;
+            height: 40px;
+            padding-left: 14px;
+            font-weight: bold;
+            outline: none;
+    
+            &:focus {
+                color: $primary-color;
+            }
+        }
+    
+        &__btn {
+            left: 326px;
+            background-color: $primary-color;
+            height: 40px;
+            width: 214px;
+            border-radius: 0 $radius $radius 0;
+            color: white;
+            border: none;
+            font-weight: 500;
+            font-size: 17px;
+            cursor: pointer;
+    
+            &::before {
+                background-color: $third-color;                
+            }    
+        }        
     }
-
-    &__submit{
-        position: absolute;
-        left: 300px;
-        background-color: $primary-color;
-        height: 40px;
-        width: 150px;
-        border-radius: 0 20px 20px 0;
-        color: white;
-        border: none;
-        font-weight: 500;
-        font-size: 17px;
-        letter-spacing: 0.1vh;
-
-        // &::before {
-        //     content: url(/images/icon/placeholder.png);
-        //     background-color: $third-color;
-        // } 
-
-    }
-  
 
     &__filters {
         display: flex;
@@ -41,14 +63,46 @@
             display: flex;
             flex-direction: row;
             align-items: center;
-            margin: 0 30px;
+            position: relative;
 
-            & li{
-                margin: 0 20px;
-                border: solid $third-color 1px;
-                border-radius: 20px;
-                font-weight: 600;
-                line-height: 40px;
+            & li:nth-child(1) {
+                @include filter;
+                position: relative;
+                
+                &::before {
+                    content:url(/images/icon/economy-stylised.png);
+                    margin-right: 10px;
+                    position: absolute;
+                    left: -2px;
+                    top: -2px;
+                }
+                
+                &:hover{
+                    color: $primary-color;
+                    border-color: $secondary-color;
+                }
+            }
+
+            & li:nth-child(2) {
+                @include filter;
+                position: relative;
+
+                &::before {
+                    content:url(/images/icon/family.png);
+                    margin-right: 10px;
+                    position: absolute;
+                    left: -2px;
+                    top: -2px;
+                }
+
+            }
+
+            & li:nth-child(3) {
+                @include filter;
+            }
+
+            & li:nth-child(4) {
+                @include filter;
             }
         }
     }
@@ -71,7 +125,7 @@
     
     &__results {
         background-color: $third-color;
-        border-radius: 20px;
+        border-radius: $radius;
         flex: 5;
         margin-right: 15px;
 
@@ -98,7 +152,7 @@
 
     &__popular {
         background-color: $third-color;
-        border-radius: $bloc-radius;
+        border-radius: $radius;
         flex: 2;
         margin-left: 15px;
 
