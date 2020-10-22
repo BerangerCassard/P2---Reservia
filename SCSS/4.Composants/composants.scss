@@ -3,3 +3,22 @@
     font-weight: bold;
 }
 
+.rounded-frame {
+    background-color: white;
+    border-radius: $radius;
+    box-shadow: 1px 1px 5px 2px rgba(0,0,0,0.2);
+    width: 25vh;
+    box-sizing: border-box;
+
+    & img {
+        width: 24vh;
+        border-radius: $radius $radius 0 0;
+        display: block;
+        margin:auto;
+        padding-top: 4.5px;
+    }
+
+    & h3, p {
+        padding-left: 1vh;
+    }
+}

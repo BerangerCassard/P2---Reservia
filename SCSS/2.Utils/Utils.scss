@@ -5,6 +5,7 @@ $secondary-color: #DEEBFF;
 $third-color: #F2F2F2;
 $radius: 20px;
 $margin-inside: 50px auto;
+$font: 0.9rem;
 
 // mixins
 
@@ -17,4 +18,17 @@ $margin-inside: 50px auto;
     padding-right: 10px;
     padding-left: 50px;
     cursor: pointer;
+    position: relative;
+}
+
+@mixin filter-before {
+    margin-right: 10px;
+    position: absolute;
+    left: -2px;
+    top: -2px;
+}
+
+@mixin filter-hover {
+    color: $primary-color;
+    border-color: $secondary-color;
 }

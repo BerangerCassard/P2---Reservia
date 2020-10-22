@@ -64,6 +64,24 @@ body a {
   font-weight: bold;
 }
 
+.rounded-frame {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.2);
+  width: 25vh;
+  box-sizing: border-box;
+}
+.rounded-frame img {
+  width: 24vh;
+  border-radius: 20px 20px 0 0;
+  display: block;
+  margin: auto;
+  padding-top: 4.5px;
+}
+.rounded-frame h3, .rounded-frame p {
+  padding-left: 1vh;
+}
+
 .search {
   margin: 40px 0;
 }
@@ -71,6 +89,7 @@ body a {
   width: 33%;
   position: relative;
   display: flex;
+  margin: 20px 0;
 }
 .search__bloc__icon {
   height: 40px;
@@ -162,6 +181,10 @@ body a {
   left: -2px;
   top: -2px;
 }
+.search__filters__list li:nth-child(2):hover {
+  color: #0065FC;
+  border-color: #DEEBFF;
+}
 .search__filters__list li:nth-child(3) {
   margin: 0 20px;
   border: solid #F2F2F2 1px;
@@ -171,6 +194,18 @@ body a {
   padding-right: 10px;
   padding-left: 50px;
   cursor: pointer;
+  position: relative;
+}
+.search__filters__list li:nth-child(3)::before {
+  content: url(/images/icon/romantic.png);
+  margin-right: 10px;
+  position: absolute;
+  left: -2px;
+  top: -2px;
+}
+.search__filters__list li:nth-child(3):hover {
+  color: #0065FC;
+  border-color: #DEEBFF;
 }
 .search__filters__list li:nth-child(4) {
   margin: 0 20px;
@@ -181,10 +216,29 @@ body a {
   padding-right: 10px;
   padding-left: 50px;
   cursor: pointer;
+  position: relative;
+}
+.search__filters__list li:nth-child(4)::before {
+  content: url(/images/icon/dog.png);
+  margin-right: 10px;
+  position: absolute;
+  left: -2px;
+  top: -2px;
+}
+.search__filters__list li:nth-child(4):hover {
+  color: #0065FC;
+  border-color: #DEEBFF;
+}
+.search > p {
+  position: relative;
+  left: 40px;
 }
 .search > p::before {
   content: url(/images/icon/information.png);
   margin-right: 10px;
+  position: absolute;
+  left: -40px;
+  top: -3px;
 }
 
 .accomodation {
@@ -201,15 +255,6 @@ body a {
   width: 90%;
   margin: 50px auto;
 }
-.accomodation__results__inside__list {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.accomodation__results__inside__list img {
-  width: 200px;
-}
 .accomodation__results__inside > p {
   font-weight: bold;
 }
@@ -224,6 +269,44 @@ body a {
   margin: 50px auto;
 }
 
+.bloc-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px auto;
+}
+.bloc-top__pic1__description p::after {
+  content: url(/images/icon/star.png);
+  display: block;
+}
+.bloc-top__pic2__description p::after {
+  content: url(/images/icon/star.png);
+  display: block;
+}
+.bloc-top__pic3__description p::after {
+  content: url(/images/icon/star.png);
+  display: block;
+}
+
+.bloc-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px auto;
+}
+.bloc-bottom__pic1__description p::after {
+  content: url(/images/icon/star.png);
+  display: block;
+}
+.bloc-bottom__pic2__description p::after {
+  content: url(/images/icon/star.png);
+  display: block;
+}
+.bloc-bottom__pic3__description p::after {
+  content: url(/images/icon/star.png);
+  display: block;
+}
+
 .activity__list {
   display: flex;
 }
@@ -236,8 +319,11 @@ body a {
   width: 95%;
   margin: auto;
 }
-.bloc img {
-  border-radius: 20px;
+.bloc h2 {
+  font-size: 0.9rem;
+}
+.bloc p, .bloc li {
+  font-size: 0.9rem;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -7,7 +7,18 @@
         margin: auto;
     }
 
-    & img {
-        border-radius: $radius;
+    // & img {
+    //     border-radius: $radius;
+    // }
+
+    & h2 {
+        font-size: $font;
     }
+    
+    & p,li {
+        font-size: $font;
+    }
+
+
+
 }

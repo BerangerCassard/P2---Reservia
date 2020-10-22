@@ -7,6 +7,7 @@
         width: 33%;
         position: relative;
         display: flex;
+        margin: 20px 0;
 
         &__icon {
             height: 40px;
@@ -67,52 +68,71 @@
 
             & li:nth-child(1) {
                 @include filter;
-                position: relative;
                 
                 &::before {
                     content:url(/images/icon/economy-stylised.png);
-                    margin-right: 10px;
-                    position: absolute;
-                    left: -2px;
-                    top: -2px;
+                    @include filter-before;
                 }
                 
                 &:hover{
-                    color: $primary-color;
-                    border-color: $secondary-color;
+                    @include filter-hover;
                 }
             }
 
             & li:nth-child(2) {
                 @include filter;
-                position: relative;
 
                 &::before {
                     content:url(/images/icon/family.png);
-                    margin-right: 10px;
-                    position: absolute;
-                    left: -2px;
-                    top: -2px;
+                    @include filter-before;
                 }
 
+                &:hover {
+                    @include filter-hover
+                }
             }
 
             & li:nth-child(3) {
                 @include filter;
+
+                &::before {
+                    content: url(/images/icon/romantic.png);
+                    @include filter-before;
+                }
+
+                &:hover {
+                    @include filter-hover;
+                }
+
             }
 
             & li:nth-child(4) {
                 @include filter;
+
+                &::before {
+                    content: url(/images/icon/dog.png);
+                    @include filter-before;
+                }
+
+                &:hover {
+                    @include filter-hover;
+                }
+
             }
         }
     }
 
     & > p {
-        // vertical-align: top;
+        position: relative;
+        left: 40px;
 
         &::before {
             content: url(/images/icon/information.png);
             margin-right: 10px;
+            position: absolute;
+            left: -40px;
+            top: -3px;
+
         }
     }
 }
@@ -133,16 +153,16 @@
             width: 90%;
             margin: $margin-inside;
 
-            &__list {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                flex-wrap: wrap;
+            // &__list {
+            //     display: flex;
+            //     flex-direction: column;
+            //     justify-content: space-between;
+            //     flex-wrap: wrap;
 
-                & img {
-                    width: 200px;
-                }
-            }
+            //     & img {
+            //         width: 200px;
+            //     }
+            // }
 
            & > p {
                 font-weight: bold;
@@ -162,6 +182,90 @@
         }
     }
 }
+
+// --> Folloc-up accomodation__results
+.bloc-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px auto;
+
+    &__pic1 {
+
+        &__description {
+
+            & p::after {
+                content: url(/images/icon/star.png);
+                display: block;
+            }
+        }
+    }
+
+    &__pic2 {
+
+        &__description {
+
+            & p::after {
+                content: url(/images/icon/star.png);
+                display: block;
+            }
+        }
+    }
+
+    &__pic3 {
+
+        &__description {
+
+            & p::after {
+                content: url(/images/icon/star.png);
+                display: block;
+            }
+        }
+    }
+}
+
+.bloc-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px auto;
+
+    &__pic1 {
+
+        &__description {
+
+            & p::after {
+                content: url(/images/icon/star.png);
+                display: block;
+            }
+        }
+    }
+
+    &__pic2 {
+
+        &__description {
+
+            & p::after {
+                content: url(/images/icon/star.png);
+                display: block;
+            }
+        }
+    }
+
+    &__pic3 {
+
+        &__description {
+
+            & p::after {
+                content: url(/images/icon/star.png);
+                display: block;
+            }
+        }
+    }
+}
+
+
+
 
 // activities section
 
