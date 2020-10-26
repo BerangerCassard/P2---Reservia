@@ -7,17 +7,20 @@
         margin: auto;
     }
 
-    // & img {
-    //     border-radius: $radius;
-    // }
-
     & h2 {
         font-size: $font;
+    }
+
+    & h3 {
+        font-size: 0.95rem;
     }
     
     & p,li {
         font-size: $font;
     }
+}
+
+@media screen and (max-width: 480px) {
 
 
 

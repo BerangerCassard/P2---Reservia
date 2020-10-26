@@ -1,3 +1,4 @@
+
 // Search Feature
 
 .search{
@@ -137,6 +138,9 @@
     }
 }
 
+
+
+
 // accommodation section
 
 .accomodation {
@@ -152,17 +156,6 @@
         &__inside {
             width: 90%;
             margin: $margin-inside;
-
-            // &__list {
-            //     display: flex;
-            //     flex-direction: column;
-            //     justify-content: space-between;
-            //     flex-wrap: wrap;
-
-            //     & img {
-            //         width: 200px;
-            //     }
-            // }
 
            & > p {
                 font-weight: bold;
@@ -183,11 +176,17 @@
     }
 }
 
+
+
+
+
+
 // --> Folloc-up accomodation__results
+
 .bloc-top {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 20px auto;
 
     &__pic1 {
@@ -196,6 +195,7 @@
 
             & p::after {
                 content: url(/images/icon/star.png);
+                margin: 5px 0;
                 display: block;
             }
         }
@@ -207,6 +207,7 @@
 
             & p::after {
                 content: url(/images/icon/star.png);
+                margin: 5px 0;
                 display: block;
             }
         }
@@ -218,6 +219,7 @@
 
             & p::after {
                 content: url(/images/icon/star.png);
+                margin: 5px 0;
                 display: block;
             }
         }
@@ -227,7 +229,7 @@
 .bloc-bottom {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 20px auto;
 
     &__pic1 {
@@ -236,6 +238,7 @@
 
             & p::after {
                 content: url(/images/icon/star.png);
+                margin: 5px 0;
                 display: block;
             }
         }
@@ -247,6 +250,7 @@
 
             & p::after {
                 content: url(/images/icon/star.png);
+                margin: 5px 0;
                 display: block;
             }
         }
@@ -258,11 +262,77 @@
 
             & p::after {
                 content: url(/images/icon/star.png);
+                margin: 5px 0;
                 display: block;
             }
         }
     }
 }
+
+
+
+
+
+
+// accomodation-popular
+
+.accomodation__popular__inside__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.popular-bloc {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: $radius;
+    box-shadow: 1px 1px 5px 2px rgba(0,0,0,0.2);
+    margin: 0 0 20px 0;
+    height: 12vh;
+
+    &__image {
+        flex: 2;
+
+
+        & img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: $radius 0 0 $radius;
+        }
+    }
+
+    &__text {
+        flex: 4;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        h3 {
+
+            margin: 5px 0 2px 0;
+
+        }
+
+        & p {
+
+            margin: 0 0;
+
+            &::after {
+                content: url(/images/icon/star.png);
+                margin: 10px 0;
+                display: block;
+            }   
+        }
+
+
+        
+    }
+}
+
+
+
+
 
 
 
@@ -273,5 +343,77 @@
 
     &__list {
         display: flex;
+        justify-content: space-around;
+
+        &__1pic-bloc{
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+
+            & div:nth-child(1) {
+                flex: 95%;
+                
+                & img {
+                    border-radius: $radius $radius 0 0;
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;                       
+                    }
+            }
+
+            & div:nth-child(2) {
+                flex: 5%;
+                padding-left: 20px;
+            }
+        }
+
+        &__2pic-bloc {
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+
+            &__top {
+                margin-bottom: 20px;
+                // flex: 40%;
+
+                & div:nth-child(1) {
+                    flex: 95%;
+
+                    & img {
+                    border-radius: $radius $radius 0 0;
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;                       
+                    }
+                }
+
+                & div:nth-child(2) {
+                    flex: 5%;
+                    padding-left: 20px;
+                }
+            }
+
+            &__bottom {
+                margin-top: 20px;
+                // flex: 60%;
+
+                & div:nth-child(1) {
+                    flex: 95%;
+
+                    & img {
+                        border-radius: $radius $radius 0 0;
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;                       
+                        }
+                }
+
+                & div:nth-child(2) {
+                    flex: 5%;
+                    padding-left: 20px;
+
+                }
+            }
+        }
     }
 }

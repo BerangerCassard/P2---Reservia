@@ -64,22 +64,40 @@ body a {
   font-weight: bold;
 }
 
-.rounded-frame {
+.rounded-frame-accomodation {
   background-color: white;
   border-radius: 20px;
   box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.2);
-  width: 25vh;
+  width: 33%;
   box-sizing: border-box;
+  margin: 0 1%;
+  padding: 4.5px;
 }
-.rounded-frame img {
-  width: 24vh;
+.rounded-frame-accomodation img {
+  max-width: 100%;
+  height: auto;
   border-radius: 20px 20px 0 0;
   display: block;
   margin: auto;
-  padding-top: 4.5px;
 }
-.rounded-frame h3, .rounded-frame p {
+.rounded-frame-accomodation h3, .rounded-frame-accomodation p {
   padding-left: 1vh;
+}
+.rounded-frame-accomodation p {
+  margin: 0 0;
+}
+.rounded-frame-accomodation h3 {
+  margin: 5px 0 2px 0;
+}
+
+.rounded-frame-activity {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+}
+.rounded-frame-activity img {
+  border-radius: 20px 20px 0 0;
 }
 
 .search {
@@ -272,43 +290,146 @@ body a {
 .bloc-top {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 20px auto;
 }
 .bloc-top__pic1__description p::after {
   content: url(/images/icon/star.png);
+  margin: 5px 0;
   display: block;
 }
 .bloc-top__pic2__description p::after {
   content: url(/images/icon/star.png);
+  margin: 5px 0;
   display: block;
 }
 .bloc-top__pic3__description p::after {
   content: url(/images/icon/star.png);
+  margin: 5px 0;
   display: block;
 }
 
 .bloc-bottom {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 20px auto;
 }
 .bloc-bottom__pic1__description p::after {
   content: url(/images/icon/star.png);
+  margin: 5px 0;
   display: block;
 }
 .bloc-bottom__pic2__description p::after {
   content: url(/images/icon/star.png);
+  margin: 5px 0;
   display: block;
 }
 .bloc-bottom__pic3__description p::after {
   content: url(/images/icon/star.png);
+  margin: 5px 0;
+  display: block;
+}
+
+.accomodation__popular__inside__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.popular-bloc {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.2);
+  margin: 0 0 20px 0;
+  height: 12vh;
+}
+.popular-bloc__image {
+  flex: 2;
+}
+.popular-bloc__image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px 0 0 20px;
+}
+.popular-bloc__text {
+  flex: 4;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.popular-bloc__text h3 {
+  margin: 5px 0 2px 0;
+}
+.popular-bloc__text p {
+  margin: 0 0;
+}
+.popular-bloc__text p::after {
+  content: url(/images/icon/star.png);
+  margin: 10px 0;
   display: block;
 }
 
 .activity__list {
   display: flex;
+  justify-content: space-around;
+}
+.activity__list__1pic-bloc {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+.activity__list__1pic-bloc div:nth-child(1) {
+  flex: 95%;
+}
+.activity__list__1pic-bloc div:nth-child(1) img {
+  border-radius: 20px 20px 0 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.activity__list__1pic-bloc div:nth-child(2) {
+  flex: 5%;
+  padding-left: 20px;
+}
+.activity__list__2pic-bloc {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+.activity__list__2pic-bloc__top {
+  margin-bottom: 20px;
+}
+.activity__list__2pic-bloc__top div:nth-child(1) {
+  flex: 95%;
+}
+.activity__list__2pic-bloc__top div:nth-child(1) img {
+  border-radius: 20px 20px 0 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.activity__list__2pic-bloc__top div:nth-child(2) {
+  flex: 5%;
+  padding-left: 20px;
+}
+.activity__list__2pic-bloc__bottom {
+  margin-top: 20px;
+}
+.activity__list__2pic-bloc__bottom div:nth-child(1) {
+  flex: 95%;
+}
+.activity__list__2pic-bloc__bottom div:nth-child(1) img {
+  border-radius: 20px 20px 0 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.activity__list__2pic-bloc__bottom div:nth-child(2) {
+  flex: 5%;
+  padding-left: 20px;
 }
 
 .bloc {
@@ -321,6 +442,9 @@ body a {
 }
 .bloc h2 {
   font-size: 0.9rem;
+}
+.bloc h3 {
+  font-size: 0.95rem;
 }
 .bloc p, .bloc li {
   font-size: 0.9rem;

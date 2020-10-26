@@ -3,22 +3,44 @@
     font-weight: bold;
 }
 
-.rounded-frame {
+.rounded-frame-accomodation {
     background-color: white;
     border-radius: $radius;
     box-shadow: 1px 1px 5px 2px rgba(0,0,0,0.2);
-    width: 25vh;
+    width: 33%;
     box-sizing: border-box;
+    margin: 0 1%;
+    padding: 4.5px;
 
     & img {
-        width: 24vh;
+        max-width: 100%;
+        height: auto;
         border-radius: $radius $radius 0 0;
         display: block;
         margin:auto;
-        padding-top: 4.5px;
     }
 
     & h3, p {
         padding-left: 1vh;
+    }
+
+    & p {
+        margin: 0 0;
+    }
+
+    & h3 {
+        margin: 5px 0 2px 0;
+    }
+}
+
+
+.rounded-frame-activity {
+    background-color: white;
+    border-radius: $radius;
+    box-shadow: 1px 1px 5px 2px rgba(0,0,0,0.2);
+    box-sizing: border-box;
+
+    & img {
+        border-radius: $radius $radius 0 0;
     }
 }
