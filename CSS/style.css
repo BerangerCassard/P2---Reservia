@@ -13,6 +13,7 @@ body {
 }
 body H1 {
   font-weight: 900;
+  line-height: 30px;
 }
 body a {
   cursor: pointer;
@@ -36,11 +37,11 @@ body a {
   padding: 0 0.5em;
   justify-content: space-around;
 }
-.header__nav {
+.header__box__nav {
   display: flex;
   justify-content: space-around;
 }
-.header__nav :hover {
+.header__box__nav :hover {
   color: #0065FC;
 }
 .header a {
@@ -106,14 +107,14 @@ body a {
   margin: 40px 0;
 }
 .search__bloc {
-  width: 33%;
+  width: 300px;
   position: relative;
   display: flex;
   margin: 20px 0;
 }
 .search__bloc__icon {
   height: 40px;
-  width: 65px;
+  width: 80px;
   background-color: #F2F2F2;
   border-radius: 20px 0 0 20px;
 }
@@ -333,6 +334,15 @@ body a {
   display: block;
 }
 
+.accomodation__popular__inside H1 {
+  position: relative;
+}
+.accomodation__popular__inside H1::after {
+  content: url(/images/icon/bar-chart.png);
+  position: absolute;
+  right: 3px;
+  top: -8px;
+}
 .accomodation__popular__inside__list {
   display: flex;
   flex-direction: column;
@@ -456,6 +466,13 @@ body a {
 }
 
 @media screen and (max-width: 1024px) {
+  .header {
+    flex-direction: column;
+    align-items: initial;
+  }
+  .header__logo {
+    position: absolute;
+  }
   .header__box {
     flex-direction: column-reverse;
     margin-top: 20px;
@@ -463,24 +480,40 @@ body a {
   .header__box > a {
     text-align: right;
   }
-  .header__box__nav a:nth-child(1) {
-    border-bottom: 2px solid #F2F2F2;
+  .header__box__nav {
+    margin-top: 40px;
+    justify-content: center;
+  }
+  .header__box__nav__accomodation {
+    border-bottom: solid 3px #F2F2F2;
+  }
+  .header__box__nav__accomodation:hover {
+    border-color: #0065FC;
+  }
+  .header__box__nav__activity {
+    border-bottom: solid 3px #F2F2F2;
+  }
+  .header__box__nav__activity:hover {
+    border-color: #0065FC;
   }
 
+  .search__filters {
+    flex-direction: column;
+  }
   .search__filters__list {
     flex-wrap: wrap;
   }
   .search__filters__list li:nth-child(1) {
-    margin: 10px 20px;
+    margin: 10px 20px 10px 0;
   }
   .search__filters__list li:nth-child(2) {
-    margin: 10px 20px;
+    margin: 10px 20px 10px 0;
   }
   .search__filters__list li:nth-child(3) {
-    margin: 10px 20px;
+    margin: 10px 20px 10px 0;
   }
   .search__filters__list li:nth-child(4) {
-    margin: 10px 20px;
+    margin: 10px 20px 10px 0;
   }
 
   .accomodation {
@@ -524,6 +557,10 @@ body a {
 
   .rounded-frame-accomodation {
     width: 100%;
+  }
+
+  .accomodation__popular {
+    border-radius: initial;
   }
 
   .activity__list {

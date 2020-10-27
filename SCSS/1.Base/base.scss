@@ -13,10 +13,11 @@ body {
     font-stretch: condensed;
     & H1 {
         font-weight: 900;
+        line-height: 30px;
     }
     & a {
-     cursor: pointer;
-     text-decoration: none;
-     color: black;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
     }
 }

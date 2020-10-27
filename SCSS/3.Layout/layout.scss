@@ -16,7 +16,7 @@
             display: flex;
             padding: 0 0.5em;
             justify-content: space-around;
-        }
+        
             &__nav {
                 display: flex;
                 justify-content: space-around;
@@ -24,10 +24,12 @@
                     color: $primary-color;
                 }
             }
-                & a {
-                display: inline-block;
-                padding: 0 1em;
-                }
+        }
+
+            & a {
+            display: inline-block;
+            padding: 0 1em;
+            }
     }
 
 // Footer

@@ -5,14 +5,14 @@
     margin: 40px 0;
 
     &__bloc {
-        width: 33%;
+        width: 300px;
         position: relative;
         display: flex;
         margin: 20px 0;
 
         &__icon {
             height: 40px;
-            width: 65px;
+            width: 80px;
             background-color: $third-color;
             border-radius: $radius 0 0 $radius;
 
@@ -157,9 +157,9 @@
             width: 90%;
             margin: $margin-inside;
 
-           & > p {
+            & > p {
                 font-weight: bold;
-           } 
+            } 
         }
     }
 
@@ -276,10 +276,25 @@
 
 // accomodation-popular
 
-.accomodation__popular__inside__list {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+.accomodation__popular__inside { 
+
+    & H1 {
+        position: relative;
+
+        &::after {
+            content: url(/images/icon/bar-chart.png);
+            position: absolute;
+            right: 3px;
+            top: -8px;
+        }
+    }
+
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
 }
 
 .popular-bloc {
