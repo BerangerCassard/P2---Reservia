@@ -174,10 +174,23 @@
 
     .activity__list {
         flex-direction: column;
+        width: 90%;
+        margin: auto;
 
         &__1pic-bloc {
             width: 100%;
             margin-bottom: 20px;
+
+            &__link {
+                
+                &__image1 {
+                    height: $responsive-bloc;
+                }
+                
+                &__image2 {
+                    height: $responsive-bloc;
+                }
+            }
         }
 
         &__2pic-bloc {
@@ -185,14 +198,36 @@
 
             &__top {
                 margin-bottom: 10px;
+
+                &__link {
+                    
+                    &__image1 {
+                        height: $responsive-bloc; 
+                    }
+
+                    &__image2 {
+                        height: $responsive-bloc;
+                    }
+                }
             }
 
             &__bottom {
                 margin-top: 10px;
                 margin-bottom: 20px;
 
+                &__link {
+
+                    &__image1 {
+                        height: $responsive-bloc;    
+                    }
+                    
+                    &__image2 {
+                        height: $responsive-bloc;
+                    }
+                }
             }
         }
     }
+
 
 }

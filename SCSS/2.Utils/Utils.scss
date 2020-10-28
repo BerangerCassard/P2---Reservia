@@ -6,6 +6,9 @@ $third-color: #F2F2F2;
 $radius: 20px;
 $margin-inside: 50px auto;
 $font: 0.9rem;
+$responsive-bloc: 180px;
+$width-image-popular: 124px;
+$margin-image-popular : 4px 0 4px 4px;
 
 // mixins
 
@@ -31,4 +34,11 @@ $font: 0.9rem;
 @mixin filter-hover {
     color: $primary-color;
     border-color: $secondary-color;
+}
+
+@mixin activity-image {
+    background-repeat: no-repeat;
+    object-fit: cover;
+    border-radius: $radius $radius 0 0;
+    width: 100%;
 }

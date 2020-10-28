@@ -77,11 +77,11 @@ body a {
   padding: 4.5px;
 }
 .rounded-frame-accomodation img {
-  max-width: 100%;
-  height: auto;
+  height: 100%;
+  width: 100%;
   border-radius: 20px 20px 0 0;
-  display: block;
   margin: auto;
+  object-fit: cover;
 }
 .rounded-frame-accomodation h3, .rounded-frame-accomodation p {
   padding-left: 1vh;
@@ -98,9 +98,6 @@ body a {
   border-radius: 20px;
   box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
-}
-.rounded-frame-activity img {
-  border-radius: 20px 20px 0 0;
 }
 
 .search {
@@ -296,17 +293,47 @@ body a {
   justify-content: space-around;
   margin: 20px auto;
 }
-.bloc-top__pic1__description p::after {
+.bloc-top__pic1__link {
+  display: flex;
+  flex-direction: column;
+}
+.bloc-top__pic1__link__image {
+  background-image: url(/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+  height: 180px;
+  width: 100%;
+  background-size: cover;
+  border-radius: 20px 20px 0 0;
+  background-repeat: no-repeat;
+}
+.bloc-top__pic1__link__description p::after {
   content: url(/images/icon/star.png);
   margin: 5px 0;
   display: block;
 }
-.bloc-top__pic2__description p::after {
+.bloc-top__pic2__link {
+  display: flex;
+  flex-direction: column;
+}
+.bloc-top__pic2__link__image {
+  background-image: url(/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+  height: 180px;
+  width: 100%;
+  background-size: cover;
+  border-radius: 20px 20px 0 0;
+}
+.bloc-top__pic2__link__description p::after {
   content: url(/images/icon/star.png);
   margin: 5px 0;
   display: block;
 }
-.bloc-top__pic3__description p::after {
+.bloc-top__pic3__link__image {
+  background-image: url(/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+  height: 180px;
+  width: 100%;
+  background-size: cover;
+  border-radius: 20px 20px 0 0;
+}
+.bloc-top__pic3__link__description p::after {
   content: url(/images/icon/star.png);
   margin: 5px 0;
   display: block;
@@ -318,17 +345,38 @@ body a {
   justify-content: space-around;
   margin: 20px auto;
 }
-.bloc-bottom__pic1__description p::after {
+.bloc-bottom__pic1__link__image {
+  background-image: url(/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+  height: 180px;
+  width: 100%;
+  background-size: cover;
+  border-radius: 20px 20px 0 0;
+}
+.bloc-bottom__pic1__link__description p::after {
   content: url(/images/icon/star.png);
   margin: 5px 0;
   display: block;
 }
-.bloc-bottom__pic2__description p::after {
+.bloc-bottom__pic2__link__image {
+  background-image: url(/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+  height: 180px;
+  width: 100%;
+  background-size: cover;
+  border-radius: 20px 20px 0 0;
+}
+.bloc-bottom__pic2__link__description p::after {
   content: url(/images/icon/star.png);
   margin: 5px 0;
   display: block;
 }
-.bloc-bottom__pic3__description p::after {
+.bloc-bottom__pic3__link__image {
+  background-image: url(/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+  height: 180px;
+  width: 100%;
+  background-size: cover;
+  border-radius: 20px 20px 0 0;
+}
+.bloc-bottom__pic3__link__description p::after {
   content: url(/images/icon/star.png);
   margin: 5px 0;
   display: block;
@@ -356,21 +404,36 @@ body a {
   border-radius: 20px;
   box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.2);
   margin: 0 0 20px 0;
-  height: 12vh;
+  height: 180px;
 }
-.popular-bloc__image {
-  flex: 2;
+.popular-bloc__image1 {
+  margin: 4px 0 4px 4px;
+  background-image: url(/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+  height: 96%;
+  width: 124px;
+  object-fit: cover;
+  border-radius: 20px 0 0 20px;
 }
-.popular-bloc__image img {
-  height: 100%;
-  width: 100%;
+.popular-bloc__image2 {
+  margin: 4px 0 4px 4px;
+  background-image: url(/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg);
+  height: 96%;
+  width: 124px;
+  object-fit: cover;
+  border-radius: 20px 0 0 20px;
+}
+.popular-bloc__image3 {
+  margin: 4px 0 4px 4px;
+  background-image: url(/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
+  height: 96%;
+  width: 124px;
   object-fit: cover;
   border-radius: 20px 0 0 20px;
 }
 .popular-bloc__text {
-  flex: 4;
   padding-left: 20px;
   padding-right: 20px;
+  box-sizing: border-box;
 }
 .popular-bloc__text h3 {
   margin: 5px 0 2px 0;
@@ -391,22 +454,28 @@ body a {
 .activity__list__1pic-bloc {
   width: 20%;
 }
-.activity__list__1pic-bloc a {
+.activity__list__1pic-bloc__link {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
-.activity__list__1pic-bloc a div:nth-child(1) {
-  flex: 95%;
-}
-.activity__list__1pic-bloc a div:nth-child(1) img {
-  border-radius: 20px 20px 0 0;
-  height: 100%;
-  width: 100%;
+.activity__list__1pic-bloc__link__image1 {
+  height: 349px;
+  background-image: url(/images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+  background-repeat: no-repeat;
   object-fit: cover;
+  border-radius: 20px 20px 0 0;
+  width: 100%;
 }
-.activity__list__1pic-bloc a div:nth-child(2) {
-  flex: 5%;
+.activity__list__1pic-bloc__link__image2 {
+  height: 349px;
+  background-image: url(/images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+}
+.activity__list__1pic-bloc__link__description {
   padding-left: 20px;
 }
 .activity__list__2pic-bloc {
@@ -417,33 +486,45 @@ body a {
 .activity__list__2pic-bloc__top {
   margin-bottom: 20px;
 }
-.activity__list__2pic-bloc__top div:nth-child(1) {
-  flex: 95%;
-}
-.activity__list__2pic-bloc__top div:nth-child(1) img {
-  border-radius: 20px 20px 0 0;
-  height: 100%;
-  width: 100%;
+.activity__list__2pic-bloc__top__link__image1 {
+  height: 145px;
+  background-image: url(/images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+  background-repeat: no-repeat;
   object-fit: cover;
+  border-radius: 20px 20px 0 0;
+  width: 100%;
 }
-.activity__list__2pic-bloc__top div:nth-child(2) {
-  flex: 5%;
+.activity__list__2pic-bloc__top__link__image2 {
+  height: 110px;
+  background-image: url(/images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+}
+.activity__list__2pic-bloc__top__link__description {
   padding-left: 20px;
 }
 .activity__list__2pic-bloc__bottom {
   margin-top: 20px;
 }
-.activity__list__2pic-bloc__bottom div:nth-child(1) {
-  flex: 95%;
-}
-.activity__list__2pic-bloc__bottom div:nth-child(1) img {
-  border-radius: 20px 20px 0 0;
-  height: 100%;
-  width: 100%;
+.activity__list__2pic-bloc__bottom__link__image1 {
+  background-image: url(/images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+  background-repeat: no-repeat;
   object-fit: cover;
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+  height: 110px;
 }
-.activity__list__2pic-bloc__bottom div:nth-child(2) {
-  flex: 5%;
+.activity__list__2pic-bloc__bottom__link__image2 {
+  background-image: url(/images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+  height: 145px;
+}
+.activity__list__2pic-bloc__bottom__link__description {
   padding-left: 20px;
 }
 
@@ -565,10 +646,18 @@ body a {
 
   .activity__list {
     flex-direction: column;
+    width: 90%;
+    margin: auto;
   }
   .activity__list__1pic-bloc {
     width: 100%;
     margin-bottom: 20px;
+  }
+  .activity__list__1pic-bloc__link__image1 {
+    height: 180px;
+  }
+  .activity__list__1pic-bloc__link__image2 {
+    height: 180px;
   }
   .activity__list__2pic-bloc {
     width: 100%;
@@ -576,9 +665,21 @@ body a {
   .activity__list__2pic-bloc__top {
     margin-bottom: 10px;
   }
+  .activity__list__2pic-bloc__top__link__image1 {
+    height: 180px;
+  }
+  .activity__list__2pic-bloc__top__link__image2 {
+    height: 180px;
+  }
   .activity__list__2pic-bloc__bottom {
     margin-top: 10px;
     margin-bottom: 20px;
+  }
+  .activity__list__2pic-bloc__bottom__link__image1 {
+    height: 180px;
+  }
+  .activity__list__2pic-bloc__bottom__link__image2 {
+    height: 180px;
   }
 }
 
