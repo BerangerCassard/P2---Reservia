@@ -7,6 +7,10 @@
         margin: auto;
     }
 
+    & h1 {
+        font-weight: 900;
+    }
+
     & h2 {
         font-size: $font;
     }
@@ -20,14 +24,28 @@
     }
 }
 
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 1024px) {
 
 // header
 
     .header {
-
         flex-direction: column;
         align-items: initial;
+
+        & a {
+            width: 50%;
+            text-align: center;
+        }
 
 
         &__logo {
@@ -40,10 +58,10 @@
         
             &> a {
                 text-align: right;
+                width: 100%;
             }
         
             &__nav {
-
                 margin-top: 40px;
                 justify-content: center;
 
@@ -71,9 +89,39 @@
 
 
 
+
+
 // Search
 
     .search {
+        margin-left: 40px;
+
+        &__title {
+            width: 80%;
+        }
+
+        &__bloc {
+
+            &__icon {
+                width: 50px;
+            }
+
+            &__btn {
+                width: 52px;
+                border-radius: 10px 10px 10px 10px;
+                position: absolute;
+                left: 260px;
+
+
+                & span:nth-child(1) {
+                    display: none;
+                }
+
+                & span:nth-child(2) {
+                    display: initial;
+                }
+            }
+        }
 
         &__filters { 
             flex-direction: column;
@@ -104,6 +152,7 @@
 
 
 
+
     // Accomodation
 
         .accomodation {
@@ -118,6 +167,11 @@
                 background-color: white;
             }
         }
+
+
+
+
+
 
         // Results
 
@@ -160,11 +214,17 @@
         width: 100%;
     }
 
+
+
+
+
+
     // popular
 
     .accomodation__popular {
         border-radius: initial;
     }
+
 
 
 

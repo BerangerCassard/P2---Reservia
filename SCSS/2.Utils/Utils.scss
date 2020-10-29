@@ -36,9 +36,18 @@ $margin-image-popular : 4px 0 4px 4px;
     border-color: $secondary-color;
 }
 
+@mixin accomodation-image {
+    height: 180px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: $radius $radius 0 0; 
+}
+
+
 @mixin activity-image {
-    background-repeat: no-repeat;
-    object-fit: cover;
+    background-size: cover;
+    background-position: center;
     border-radius: $radius $radius 0 0;
     width: 100%;
 }
