@@ -20,6 +20,11 @@
             &__nav {
                 display: flex;
                 justify-content: space-around;
+
+                // &>a:hover {
+                //     border-top: solid 2px $primary-color;
+                // }
+
                 & :hover{
                     color: $primary-color;
                 }
