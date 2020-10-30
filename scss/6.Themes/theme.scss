@@ -290,4 +290,23 @@
     }
 
 
+
+
+
+
+
+
+
+
+    .footer {
+        width: 90%;
+        margin: auto;
+
+            &__bloc {
+                flex-direction: column;
+                width: 83%;
+
+            }
+    }
+
 }

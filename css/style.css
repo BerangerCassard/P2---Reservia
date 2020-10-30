@@ -718,6 +718,15 @@ body a {
   .activity__list__2pic-bloc__bottom__link__image2 {
     height: 180px;
   }
+
+  .footer {
+    width: 90%;
+    margin: auto;
+  }
+  .footer__bloc {
+    flex-direction: column;
+    width: 83%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
