@@ -439,6 +439,7 @@ body a {
   border-radius: 20px 0 0 20px;
 }
 .popular-bloc__text {
+  padding-top: 5px;
   padding-left: 20px;
   padding-right: 20px;
   box-sizing: border-box;
@@ -453,6 +454,7 @@ body a {
   content: url(/images/icon/star.png);
   margin: 10px 0;
   display: block;
+  padding-top: 50px;
 }
 
 .activity__list {

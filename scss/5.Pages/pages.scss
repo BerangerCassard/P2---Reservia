@@ -403,6 +403,7 @@
     }
 
     &__text {
+        padding-top: 5px;
         padding-left: 20px;
         padding-right: 20px;
         box-sizing: border-box;
@@ -418,6 +419,7 @@
                 content: url(/images/icon/star.png);
                 margin: 10px 0;
                 display: block;
+                padding-top: 50px;
             }   
         }
 
