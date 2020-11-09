@@ -22,6 +22,7 @@ body a {
 }
 body ul {
   list-style-type: none;
+  margin: 0 0;
 }
 
 .header {
@@ -567,7 +568,7 @@ body ul {
     flex-direction: column;
     align-items: initial;
   }
-  .header a {
+  .header li {
     width: 50%;
     text-align: center;
   }

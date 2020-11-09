@@ -16,17 +16,11 @@
             <header class="header">
                 <img class="header__logo" src="images/logo/Reservia@3x.png" alt="reservia-logo">
                 <div class="header__box">
-                    <nav class="header__box__nav">
-                        <a href="#accomodation">
-                            <ul>
-                                <li class="header__box__nav__accomodation">Hébergement</li>
-                            </ul>
-                        </a>
-                        <a href="#activity">
-                            <ul>
-                                <li class="header__box__nav__activity">Activité</li>
-                            </ul>
-                        </a>
+                    <nav>
+                        <ul class="header__box__nav">
+                            <li class="header__box__nav__accomodation"><a href="#accomodation">Hébergement</a></li>
+                            <li class="header__box__nav__activity"><a href="#activity">Activité</a></li>
+                        </ul>
                     </nav>
                     <a class="btn-inscription"> S'inscrire </a>
                 </div>
@@ -40,7 +34,7 @@
                     <p>En plein centre ville ou en pleine nature</p>
                 </div>
                 <div class="search__bloc">
-                    <div class="search__bloc__icon"><img src="/images/icon/placeholder.png"> </div>
+                    <div class="search__bloc__icon"><img src="/images/icon/placeholder.png" alt="location"> </div>
                     <!-- <form method="POST" action="traitement.php"> -->
                     <input class="search__bloc__bar" type="search" name="search__bar" id="search__bar" placeholder=" Marseille, France" size="20" maxlength="20">
                     <button class="search__bloc__btn" type="submit" >
@@ -53,11 +47,14 @@
                 </div>
                 <div class="search__filters">
                     <h2>Filtres</h2>
-                    <div class="search__filters__list"> 
-                        <li>Economique</li>
-                        <li>Familial</li>
-                        <li>Romantique</li>
-                        <li>Animaux autorisés</li>
+                    <div>
+                        <ul class="search__filters__list">
+                            <li>Economique</li>
+                            <li>Familial</li>
+                            <li>Romantique</li>
+                            <li>Animaux autorisés</li>                            
+                        </ul>
+
                     </div>
                 </div>
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
@@ -86,7 +83,7 @@
                                     </a>
                                 </div>
                                 <div class="bloc-top__pic2 rounded-frame-accomodation">
-                                    <a class="bloc-top__pic2__link"href="#">
+                                    <a class="bloc-top__pic2__link" href="#">
                                         <div class="bloc-top__pic2__link__image">
                                             <!-- <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"> -->
                                         </div>
@@ -136,7 +133,7 @@
                                 <div class="bloc-bottom__pic3 rounded-frame-accomodation"> 
                                     <a class="bloc-bottom__pic3__link" href="#">
                                         <div class="bloc-bottom__pic3__link__image">
-                                            <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
+                                            <!-- <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"> -->
                                         </div>
                                         <div class="bloc-bottom__pic3__link__description">
                                             <h3>Hôtel chez Amina</h3>
