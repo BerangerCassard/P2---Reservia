@@ -3,6 +3,7 @@
 
 .search{
     margin: 40px 0;
+    
 
     &__bloc {
         width: 300px;
@@ -63,6 +64,11 @@
         display: flex;
         flex-direction: row;
         list-style-type: none;
+
+        & > p {
+            font-size: 1.1rem !important;
+            margin-top: 0.6rem;
+        }
 
         &__list{
             display: flex;
@@ -129,6 +135,7 @@
     & > p {
         position: relative;
         left: 40px;
+        margin-right: 40px;
 
         &::before {
             content: url(/images/icon/information.png);
@@ -344,14 +351,14 @@
 
 .accomodation__popular__inside { 
 
-    & H1 {
+    & H2 {
         position: relative;
 
         &::after {
             content: url(/images/icon/bar-chart.png);
             position: absolute;
             right: 3px;
-            top: -8px;
+            top: -18px;
         }
     }
 
@@ -407,6 +414,7 @@
         padding-left: 20px;
         padding-right: 20px;
         box-sizing: border-box;
+        max-width: 64%;
 
         h3 {
             margin: 5px 0 2px 0;
@@ -418,8 +426,9 @@
             &::after {
                 content: url(/images/icon/star.png);
                 margin: 10px 0;
-                display: block;
-                padding-top: 40px;
+                display: flex;
+                height: 50px;
+                align-items: flex-end;
             }   
         }
 

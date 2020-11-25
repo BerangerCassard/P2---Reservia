@@ -12,7 +12,7 @@
     }
 
     & h2 {
-        font-size: $font;
+        font-size: 1.2rem;
     }
 
     & h3 {
@@ -34,7 +34,7 @@
 
 
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
 
 // header
 
@@ -50,6 +50,7 @@
 
         &__logo {
             position: absolute;
+            top: 44px;
         }
 
         &__box {
@@ -70,6 +71,7 @@
 
                     &:hover {
                         border-color: $primary-color;
+                        border-top: none !important;
                     }
 
                 }
@@ -79,6 +81,7 @@
 
                     &:hover {
                         border-color: $primary-color;
+                        border-top: none !important;
                     }
 
                 }
@@ -308,5 +311,39 @@
 
             }
     }
+
+}
+
+@media screen and (max-width: 375px) {
+  .search {
+
+    &__bloc {
+      width: 200px;
+
+      &__btn {
+        left: 189px;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 320px) {
+  .popular-bloc__text {
+    & p::after {
+      align-items: flex-start;
+    }
+  }
+
+  .search {
+
+    &__bloc {
+      width: 160px;
+
+      &__btn {
+        left: 154px;
+      }
+    }
+  }
 
 }

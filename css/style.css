@@ -15,6 +15,9 @@ body H1 {
   font-weight: 900;
   line-height: 30px;
 }
+body H2 {
+  font-weight: 900;
+}
 body a {
   cursor: pointer;
   text-decoration: none;
@@ -34,6 +37,8 @@ body ul {
 }
 .header__logo {
   width: 120px;
+  position: relative;
+  top: 7px;
 }
 .header__box {
   list-style-type: none;
@@ -41,9 +46,19 @@ body ul {
   padding: 0 0.5em;
   justify-content: space-around;
 }
+.header__box__link {
+  padding-top: 25px !important;
+}
 .header__box__nav {
   display: flex;
   justify-content: space-around;
+}
+.header__box__nav li {
+  padding-top: 25px;
+  border-top: solid white 2px;
+}
+.header__box__nav li:hover {
+  border-top: solid 2px #0065FC;
 }
 .header__box__nav :hover {
   color: #0065FC;
@@ -65,8 +80,17 @@ body ul {
   justify-content: space-around;
   font-size: 0.8rem;
 }
+.footer__bloc__about li {
+  margin: 10px 0;
+}
+.footer__bloc__accomodation li {
+  margin: 10px 0;
+}
+.footer__bloc__assistance li {
+  margin: 10px 0;
+}
 
-.btn-inscription {
+.header__box__link {
   color: #0065FC;
   font-weight: bold;
 }
@@ -156,6 +180,10 @@ body ul {
   display: flex;
   flex-direction: row;
   list-style-type: none;
+}
+.search__filters > p {
+  font-size: 1.1rem !important;
+  margin-top: 0.6rem;
 }
 .search__filters__list {
   display: flex;
@@ -254,6 +282,7 @@ body ul {
 .search > p {
   position: relative;
   left: 40px;
+  margin-right: 40px;
 }
 .search > p::before {
   content: url(/images/icon/information.png);
@@ -391,14 +420,14 @@ body ul {
   display: block;
 }
 
-.accomodation__popular__inside H1 {
+.accomodation__popular__inside H2 {
   position: relative;
 }
-.accomodation__popular__inside H1::after {
+.accomodation__popular__inside H2::after {
   content: url(/images/icon/bar-chart.png);
   position: absolute;
   right: 3px;
-  top: -8px;
+  top: -18px;
 }
 .accomodation__popular__inside__list {
   display: flex;
@@ -420,7 +449,7 @@ body ul {
   background-image: url(/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
   background-size: cover;
   height: 96%;
-  width: 124px;
+  width: 35%;
   object-fit: cover;
   border-radius: 20px 0 0 20px;
 }
@@ -429,7 +458,7 @@ body ul {
   background-image: url(/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg);
   background-size: cover;
   height: 96%;
-  width: 124px;
+  width: 35%;
   object-fit: cover;
   border-radius: 20px 0 0 20px;
 }
@@ -438,7 +467,7 @@ body ul {
   background-image: url(/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
   background-size: cover;
   height: 96%;
-  width: 124px;
+  width: 35%;
   object-fit: cover;
   border-radius: 20px 0 0 20px;
 }
@@ -447,6 +476,7 @@ body ul {
   padding-left: 20px;
   padding-right: 20px;
   box-sizing: border-box;
+  max-width: 64%;
 }
 .popular-bloc__text h3 {
   margin: 5px 0 2px 0;
@@ -457,8 +487,9 @@ body ul {
 .popular-bloc__text p::after {
   content: url(/images/icon/star.png);
   margin: 10px 0;
-  display: block;
-  padding-top: 40px;
+  display: flex;
+  height: 50px;
+  align-items: flex-end;
 }
 
 .activity__list {
@@ -554,7 +585,7 @@ body ul {
   font-weight: 900;
 }
 .bloc h2 {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
 }
 .bloc h3 {
   font-size: 0.95rem;
@@ -563,7 +594,7 @@ body ul {
   font-size: 0.9rem;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
   .header {
     flex-direction: column;
     align-items: initial;
@@ -574,6 +605,7 @@ body ul {
   }
   .header__logo {
     position: absolute;
+    top: 44px;
   }
   .header__box {
     flex-direction: column-reverse;
@@ -592,12 +624,14 @@ body ul {
   }
   .header__box__nav__accomodation:hover {
     border-color: #0065FC;
+    border-top: none !important;
   }
   .header__box__nav__activity {
     border-bottom: solid 3px #F2F2F2;
   }
   .header__box__nav__activity:hover {
     border-color: #0065FC;
+    border-top: none !important;
   }
 
   .search {
@@ -732,6 +766,26 @@ body ul {
   .footer__bloc {
     flex-direction: column;
     width: 83%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .search__bloc {
+    width: 200px;
+  }
+  .search__bloc__btn {
+    left: 189px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .popular-bloc__text p::after {
+    align-items: flex-start;
+  }
+
+  .search__bloc {
+    width: 160px;
+  }
+  .search__bloc__btn {
+    left: 154px;
   }
 }
 
