@@ -6,17 +6,23 @@
   font-family: raleway-italic;
   src: url("/fonts/Raleway/Raleway-Italic-VariableFont_wght.ttf");
 }
+@font-face {
+  font-family: raleway-bold;
+  src: url("/fonts/Raleway/static/Raleway-Bold.ttf");
+}
 body {
+  width: 100%;
+  margin: auto;
   font-family: raleway;
   line-height: 1.5em;
   font-stretch: condensed;
 }
 body H1 {
-  font-weight: 900;
+  font-family: raleway-bold;
   line-height: 30px;
 }
 body H2 {
-  font-weight: 900;
+  font-family: raleway-bold;
 }
 body a {
   cursor: pointer;
@@ -36,7 +42,7 @@ body ul {
   margin: 20px 0;
 }
 .header__logo {
-  width: 120px;
+  width: 106px;
   position: relative;
   top: 7px;
 }
@@ -47,7 +53,7 @@ body ul {
   justify-content: space-around;
 }
 .header__box__link {
-  padding-top: 25px !important;
+  padding-top: 27px !important;
 }
 .header__box__nav {
   display: flex;
@@ -55,6 +61,7 @@ body ul {
 }
 .header__box__nav li {
   padding-top: 25px;
+  margin: 0 16px;
   border-top: solid white 2px;
 }
 .header__box__nav li:hover {
@@ -193,7 +200,7 @@ body ul {
 }
 .search__filters__list li:nth-child(1) {
   margin: 0 20px;
-  border: solid #F2F2F2 1px;
+  border: solid #F2F2F2 2px;
   border-radius: 20px;
   font-weight: 600;
   line-height: 40px;
@@ -215,7 +222,7 @@ body ul {
 }
 .search__filters__list li:nth-child(2) {
   margin: 0 20px;
-  border: solid #F2F2F2 1px;
+  border: solid #F2F2F2 2px;
   border-radius: 20px;
   font-weight: 600;
   line-height: 40px;
@@ -237,7 +244,7 @@ body ul {
 }
 .search__filters__list li:nth-child(3) {
   margin: 0 20px;
-  border: solid #F2F2F2 1px;
+  border: solid #F2F2F2 2px;
   border-radius: 20px;
   font-weight: 600;
   line-height: 40px;
@@ -259,7 +266,7 @@ body ul {
 }
 .search__filters__list li:nth-child(4) {
   margin: 0 20px;
-  border: solid #F2F2F2 1px;
+  border: solid #F2F2F2 2px;
   border-radius: 20px;
   font-weight: 600;
   line-height: 40px;
@@ -585,7 +592,7 @@ body ul {
   font-weight: 900;
 }
 .bloc h2 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 .bloc h3 {
   font-size: 0.95rem;
@@ -612,12 +619,13 @@ body ul {
   }
   .header__logo {
     position: absolute;
-    top: 44px;
+    top: 49px;
     left: 30px;
   }
   .header__box {
     flex-direction: column-reverse;
     margin-top: 20px;
+    padding: 0 !important;
   }
   .header__box > a {
     text-align: right;
@@ -632,6 +640,7 @@ body ul {
   }
   .header__box__nav__accomodation {
     padding-top: 0 !important;
+    margin: 0 !important;
     border-bottom: solid 3px #F2F2F2;
   }
   .header__box__nav__accomodation:hover {
@@ -640,6 +649,7 @@ body ul {
   }
   .header__box__nav__activity {
     padding-top: 0 !important;
+    margin: 0% !important;
     border-bottom: solid 3px #F2F2F2;
   }
   .header__box__nav__activity:hover {

@@ -14,7 +14,7 @@ $margin-image-popular : 4px 0 4px 4px;
 
 @mixin filter {
     margin: 0 $radius;
-    border: solid $third-color 1px;
+    border: solid $third-color 2px;
     border-radius: $radius;
     font-weight: 600;
     line-height: 40px;

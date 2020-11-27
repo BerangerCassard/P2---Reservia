@@ -6,18 +6,24 @@
     font-family: raleway-italic;
     src: url("/fonts/Raleway/Raleway-Italic-VariableFont_wght.ttf");
 }
+@font-face{
+    font-family: raleway-bold;
+    src: url("/fonts/Raleway/static/Raleway-Bold.ttf");
+}
 
 body {
+    width: 100%;
+    margin: auto;
     font-family: raleway;
     line-height: 1.5em;
     font-stretch: condensed;
     & H1 {
-        font-weight: 900;
+        font-family: raleway-bold;
         line-height: 30px;
     }
 
     & H2 {
-        font-weight: 900;
+        font-family: raleway-bold;
     }
     & a {
     cursor: pointer;
