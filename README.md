@@ -1,10 +1,10 @@
 Project n°2 for OpenClassRoom
 
-Integration
+Mission : integration
 
-client : small agency developing a vacation planning tool
+Client : small agency developing a vacation planning tool
 
-competences evaluated :
+Competences evaluated :
   - Use a version management system for project monitoring and hosting
   - Set up your Front-End environment
   - Integrate content according to a mockup
