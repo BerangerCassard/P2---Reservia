@@ -4,7 +4,7 @@ Mission : integration
 
 Client : small agency developing a vacation planning tool
 
-Competences evaluated :
+ Evaluated competences :
   - Use a version management system for project monitoring and hosting
   - Set up your Front-End environment
   - Integrate content according to a mockup
